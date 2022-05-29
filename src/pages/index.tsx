@@ -22,7 +22,7 @@ const toTwoDecimalPlaces = (num: number) => Math.round(num * 100) / 100;
 const SorterColumn = ({prop, children}) => {
   const {query} = useRouter();
 
-  const [sortProp, sortOrder] = (query?.sortBy as string).split(':');
+  const [sortProp, sortOrder] = (query?.sortBy as string)?.split(':') ?? [];
 
   return (
     <th className="p-2 text-left">
