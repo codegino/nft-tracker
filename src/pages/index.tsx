@@ -65,7 +65,11 @@ const TableView = ({collectionsStats}) => {
         {collectionsStats.map(collection => {
           return (
             <tr key={collection.slug} className="border-b-2 border-blue-900">
-              <td className="p-3 text-left">{collection.name}</td>
+              <td className="p-3 text-left">
+                <Link href={`https://opensea.io/collection/${collection.slug}`}>
+                  <a target="_blank">{collection.name}</a>
+                </Link>
+              </td>
               <td className="p-3 text-left">{collection.floorPrice}⬙</td>
               <td className="p-3 text-left">
                 {toTwoDecimalPlaces(collection.oneDaySales)}
@@ -243,7 +247,7 @@ const IndexPage = () => {
     : collectionsStats;
 
   return (
-    <Layout title="OpenSea floor price">
+    <Layout title="OpenSea Collection Watchlist">
       <h1 className="text-3xl font-bold underline mb-4">My Watchlist</h1>
 
       {collectionsStats.length > 0 && <ViewChanger />}
