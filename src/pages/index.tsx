@@ -211,6 +211,8 @@ const IndexPage = () => {
     'shinsekaicorp',
     'bionicapesnft',
     'footballcritter',
+    'devs-for-revolution',
+    'okayduckyachtclub',
   ]);
 
   const [collectionsStats, setCollectionsStats] = useState<CollectionStats[]>(
