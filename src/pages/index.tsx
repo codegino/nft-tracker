@@ -208,9 +208,10 @@ const IndexPage = () => {
   const [collections] = useState([
     'blvckgenesis',
     'apiens-main-collection',
+    'junity-official',
     'shinsekaicorp',
-    'bionicapesnft',
     'footballcritter',
+    'bionicapesnft',
     'devs-for-revolution',
   ]);
 
