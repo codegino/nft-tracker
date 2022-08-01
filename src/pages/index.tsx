@@ -207,12 +207,13 @@ const ViewChanger = () => {
 const IndexPage = () => {
   const [collections] = useState([
     'blvckgenesis',
-    'apiens-main-collection',
-    'junity-official',
+    // 'apiens-main-collection',
+    // 'junity-official',
     'shinsekaicorp',
     'footballcritter',
     'bionicapesnft',
-    'devs-for-revolution',
+    'greatgoats',
+    // 'devs-for-revolution',
   ]);
 
   const [collectionsStats, setCollectionsStats] = useState<CollectionStats[]>(
