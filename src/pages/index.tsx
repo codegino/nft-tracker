@@ -175,7 +175,7 @@ const ViewChanger = () => {
 
   return (
     <div className="my-4">
-      {query?.view === 'table' ? (
+      {query?.view === 'card' ? (
         <Link
           href={{
             pathname: '/',
@@ -207,13 +207,13 @@ const ViewChanger = () => {
 const IndexPage = () => {
   const [collections] = useState([
     'blvckgenesis',
-    // 'apiens-main-collection',
-    // 'junity-official',
+    'greatgoats',
+    'bionicapesnft',
+    'apiens-main-collection',
+    'devs-for-revolution',
     'shinsekaicorp',
     'footballcritter',
-    'bionicapesnft',
-    'greatgoats',
-    // 'devs-for-revolution',
+    'junity-official',
   ]);
 
   const [collectionsStats, setCollectionsStats] = useState<CollectionStats[]>(
@@ -259,10 +259,10 @@ const IndexPage = () => {
         <h2 className="text-2xl">Fetching Collection Stats...</h2>
       ) : (
         <>
-          {query?.view === 'table' ? (
-            <TableView collectionsStats={sortedCollectionStats} />
-          ) : (
+          {query?.view === 'card' ? (
             <CardView collectionsStats={sortedCollectionStats} />
+          ) : (
+            <TableView collectionsStats={sortedCollectionStats} />
           )}
         </>
       )}
