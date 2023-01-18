@@ -17,7 +17,7 @@
     "@trivago/prettier-plugin-sort-imports": "3.2.0",
     "@types/node": "18.11.18",
     "@types/react": "18.0.9",
-    "autoprefixer": "10.4.7",
+    "autoprefixer": "10.4.13",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "8.32.0",
     "eslint-config-next": "12.1.6",
