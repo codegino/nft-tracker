@@ -10,13 +10,13 @@
   },
   "dependencies": {
     "next": "12.1.6",
-    "react": "18.1.0",
+    "react": "18.2.0",
     "react-dom": "18.1.0"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "3.2.0",
     "@types/node": "18.11.18",
-    "@types/react": "18.0.9",
+    "@types/react": "18.0.26",
     "autoprefixer": "10.4.13",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "8.32.0",
