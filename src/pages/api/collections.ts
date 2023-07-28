@@ -4,17 +4,18 @@ const handler = async (_req: NextApiRequest, res: NextApiResponse) => {
   try {
     const collections = _req.query.name;
 
-    const options = {
+    const options: RequestInit = {
       method: 'GET',
+      headers: {
+        accept: 'application/json',
+        'X-API-KEY': process.env.OPENSEA_API as string,
+      },
     };
 
     let collectionsStats = [];
 
     for (const iterator of collections) {
-      await fetch(
-        `https://api.opensea.io/api/v1/collection/${iterator}`,
-        options,
-      )
+      await fetch(`https://api.opensea.io/collection/${iterator}`, options)
         .then(response => response.json())
         .then(response => {
           const collection = response.collection;
