@@ -1,6 +1,10 @@
 {
-  "name": "nextjs-typscript-tailwind-starter",
+  "name": "codegino-nft-tracker",
+  "engines": {
+    "node": "18.12.1"
+  },
   "private": true,
+  "packageManager": "pnpm@8.6.7",
   "scripts": {
     "dev": "next",
     "build": "next build",
